@@ -12,7 +12,7 @@ namespace Secao_02_Aula_17
             prod.Nome = Console.ReadLine();
 
             Console.Write("Digite o preço do Produto: ");
-            prod.Preco = Convert.ToDouble(Console.ReadLine());
+            prod.Preco = double.Parse(Console.ReadLine());
 
             Console.Write("Digite quantidade em Estoque: ");
             prod.QuantidadeEmEstoque = int.Parse(Console.ReadLine());
