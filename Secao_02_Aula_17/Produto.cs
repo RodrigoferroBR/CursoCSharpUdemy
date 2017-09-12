@@ -12,12 +12,12 @@ namespace Secao_02_Aula_17
 
         public double ValorTotalEmEstoque()
         {
-            return Math.Sqrt(QuantidadeEmEstoque * Preco);
+            return (QuantidadeEmEstoque * Preco);
         }
 
         public string MostrarSaida()
         {
-            return $"Dados do Produto: {Nome}, R$ {Preco}, Total: R$ {ValorTotalEmEstoque()}";
+            return $"Dados do Produto: {Nome} - {string.Format("{0:C}", Preco)} - {QuantidadeEmEstoque} Unidade(s) - Total: {string.Format("{0:C}", ValorTotalEmEstoque())}";
         }
 
         public void EntradaEstoque(int quantidade)
